@@ -18,11 +18,11 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1)
         }
 
-        h1 {
+        .homepage, .number h1 {
             color: #2c3e50;
         }
 
-        p{
+        .homepage, .number p{
             font-size: 18px;
             color: #555
         }     
@@ -30,8 +30,15 @@
 </head>
 <body>
     <div class="container">
+        <div class="homepage">
         <h1>{{ restaurant_name }}</h1>
         <p>Welcome to our restaurant! We're here to serve you delicious food.</p>
+        </div>
+        
+        <div class="number">
+            <h1>Welcom to our Restaurant!</h1>
+            <p>Call us at : {{ phone }}</p>
+        </div>
     </div>
 </body>
 </html>
